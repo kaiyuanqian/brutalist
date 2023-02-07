@@ -1,0 +1,13 @@
+.noggin {
+    height: auto;
+    width: 150px;
+}
+
+.lang {
+    background-color: aqua;
+    color: brown;
+}
+
+body {
+    font-family: "Times New Roman", sans-serif;
+}
