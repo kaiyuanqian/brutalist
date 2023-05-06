@@ -5,8 +5,8 @@ function spawnTriangle() {
     let y = 20;
     let height = '100';
 
-    // create 15 triangles
-    for (let i = 0; i < 15; i++) {
+    // create 19 triangles
+    for (let i = 0; i < 19; i++) {
         const triangle = document.createElement('div');
 
         let b = height / 1.75;
@@ -18,11 +18,17 @@ function spawnTriangle() {
         triangle.style.borderRight = b + 'px solid transparent';
         triangle.style.borderBottom = height + 'px solid red';
         triangle.style.borderLeft = b + 'px solid transparent';
+
+        triangle.style.transform = 'rotate(' + randNum(0, 360) + 'deg)';
         
         triangles.appendChild(triangle);
         height -= 5;
 
     }
+}
+
+function randNum(min, max) {
+    return Math.random() * (max - min + 1) + min;
 }
 
 spawnTriangle();
