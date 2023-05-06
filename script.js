@@ -1,28 +1,39 @@
 function spawnTriangle() {
-    const triangles = document.querySelector('.triangles');
+    const triangles1 = document.querySelector('.triangles1');
+    const triangles2 = document.querySelector('.triangles2');
 
-    let x = 20;
-    let y = 20;
     let height = '100';
 
     // create 19 triangles
-    for (let i = 0; i < 19; i++) {
-        const triangle = document.createElement('div');
-
+    for (let i = 0; i < 9; i++) {
+        const triangle1 = document.createElement('div');
+        const triangle2 = document.createElement('div');
+        
         let b = height / 1.75;
         
-        //style triangles
-        triangle.style.height = 0;
-        triangle.style.width = 0;
-        triangle.style.borderTop = '0px';
-        triangle.style.borderRight = b + 'px solid transparent';
-        triangle.style.borderBottom = height + 'px solid red';
-        triangle.style.borderLeft = b + 'px solid transparent';
+        //style triangle1
+        triangle1.style.height = 0;
+        triangle1.style.width = 0;
+        triangle1.style.borderTop = '0px';
+        triangle1.style.borderRight = b + 'px solid transparent';
+        triangle1.style.borderBottom = height + 'px solid red';
+        triangle1.style.borderLeft = b + 'px solid transparent';
 
-        triangle.style.transform = 'rotate(' + randNum(0, 360) + 'deg)';
+        triangle1.style.transform = 'rotate(' + randNum(0, 360) + 'deg)';
+
+        //style triangle2
+        triangle2.style.height = 0;
+        triangle2.style.width = 0;
+        triangle2.style.borderTop = '0px';
+        triangle2.style.borderRight = b + 'px solid transparent';
+        triangle2.style.borderBottom = height + 'px solid red';
+        triangle2.style.borderLeft = b + 'px solid transparent';
+
+        triangle2.style.transform = 'rotate(' + randNum(0, 360) + 'deg)';
         
-        triangles.appendChild(triangle);
-        height -= 5;
+        triangles1.appendChild(triangle1);
+        triangles2.appendChild(triangle2);
+        height -= 10;
 
     }
 }
