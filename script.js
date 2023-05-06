@@ -3,16 +3,25 @@ function spawnTriangle() {
 
     let x = 20;
     let y = 20;
+    let height = '100';
+
     // create 15 triangles
     for (let i = 0; i < 15; i++) {
         const triangle = document.createElement('div');
+
+        let b = height / 1.75;
+        
+        //style triangles
         triangle.style.height = 0;
         triangle.style.width = 0;
         triangle.style.borderTop = '0px';
-        triangle.style.borderRight = '5px solid transparent';
-        triangle.style.borderBottom = '10px solid red';
-        triangle.style.borderLeft = '5px solid transparent';
+        triangle.style.borderRight = b + 'px solid transparent';
+        triangle.style.borderBottom = height + 'px solid red';
+        triangle.style.borderLeft = b + 'px solid transparent';
+        
         triangles.appendChild(triangle);
+        height -= 5;
+
     }
 }
 
