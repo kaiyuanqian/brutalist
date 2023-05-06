@@ -1,28 +1,8 @@
-* {
-    text-align: center;
-}
-
-.noggin {
-    height: auto;
-    width: 150px;
-}
-
-.lang {
-    background-color: aqua;
-    height: auto;
-    width: 95px;
-    margin: 0 auto;
-    border: 5px solid brown;
-    padding: 5px;
-    color: brown;
-}
-
-ul {
-    height: auto;
-    width: 85px;
-    margin: 0 auto;
-}
-
 body {
-    font-family: "Times New Roman", sans-serif;
+    font-family: 'Varela Round';
+    background-color: blanchedalmond;
+}
+
+.triangles {
+    display: flex;
 }
