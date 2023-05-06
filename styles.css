@@ -1,5 +1,5 @@
 body {
-    font-family: 'Varela Round';
+    
     background-color: blanchedalmond;
     display: flex;
 }
@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    margin-top: 20px;
     gap: 10px;
 }
 
@@ -15,5 +16,23 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    margin-top: 20px;
     gap: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-family: 'Varela Round';
+}
+
+.name .first {
+    font-size: 48px;
+}
+
+.name .last {
+    font-size: 48px;
+    margin-left: auto;
 }
