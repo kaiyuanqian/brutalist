@@ -7,24 +7,24 @@ body {
 .triangles1 {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-top: 20px;
-    gap: 0px;
+    margin-left: 1vmax;
+    margin-top: 1vmax;
+    gap: 0vmax;
 }
 
 .triangles2 {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    margin-top: 20px;
-    gap: 0px;
+    margin-left: 0.3vmax;
+    margin-top: 1vmax;
+    gap: 0vmax;
 }
 
 .name {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-top: 60px;
+    margin-left: 2vmax;
+    margin-top: 4vmax;
     font-family: 'Varela Round';
     border: 4px solid rgb(255, 119, 119);
     border-radius: 8px;
@@ -33,12 +33,12 @@ body {
 }
 
 .name .first {
-    font-size: 48px;
+    font-size: 3.6vmax;
 }
 
 .name .last {
-    font-size: 48px;
+    font-size: 3.6vmax;
     margin-left: auto;
-    margin-bottom: 0px;
+    
     
 }
