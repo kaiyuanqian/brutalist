@@ -23,7 +23,7 @@ body {
 .name {
     display: flex;
     flex-direction: column;
-    margin-left: 2vmax;
+    margin-left: 4vw;
     margin-top: 4vmax;
     font-family: 'Varela Round';
     border: 0.25vmax solid rgb(255, 119, 119);
