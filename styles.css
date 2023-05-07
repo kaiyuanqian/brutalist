@@ -64,4 +64,5 @@ a {
 a:hover {
     transform: scale(1.1);
     box-shadow: 0 0 2vmax rgba(0, 0, 0, 0.8);
+    transition: 0.2s ease all 0s;
 }
