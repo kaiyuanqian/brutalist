@@ -5,7 +5,7 @@ function spawnTriangle() {
     let height = '100';
 
     // create 19 triangles
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 12; i++) {
         const triangle1 = document.createElement('div');
         const triangle2 = document.createElement('div');
         
@@ -33,7 +33,7 @@ function spawnTriangle() {
         
         triangles1.appendChild(triangle1);
         triangles2.appendChild(triangle2);
-        height -= 10;
+        height -= 8;
 
     }
 }
