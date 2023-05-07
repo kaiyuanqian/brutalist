@@ -4,7 +4,13 @@ function spawnTriangle() {
 
     let height = '10';
 
-    // create 19 triangles
+    let green = Math.floor(randNum(0, 9));
+    let col = Math.floor(randNum(1, 2));
+
+    console.log(green);
+    console.log(col);
+    
+    // create 10 triangles
     for (let i = 0; i < 10; i++) {
         const triangle1 = document.createElement('div');
         const triangle2 = document.createElement('div');
@@ -30,6 +36,14 @@ function spawnTriangle() {
         triangle2.style.borderLeft = b + 'vh solid transparent';
 
         triangle2.style.transform = 'rotate(' + randNum(0, 360) + 'deg)';
+        
+        if (i == green) {
+            if (col == 1) {
+                triangle1.style.borderBottom = height + 'vh solid green';
+            } else {
+                triangle2.style.borderBottom = height + 'vh solid green';
+            }
+        }
         
         triangles1.appendChild(triangle1);
         triangles2.appendChild(triangle2);
